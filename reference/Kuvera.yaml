@@ -311,6 +311,22 @@ paths:
                     - inception
       operationId: get_fund_categories
       description: Returns list of fund categories with their returns across a range of time periods.
+  /mf/api/v4/fund_scheme_categories.json:
+    get:
+      summary: Get Fund Scheme Types and Categorories Returns
+      tags:
+        - Mutual Funds
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                additionalProperties:
+                  type: array
+      operationId: get_fund_scheme_categories
+      description: Returns list of fund scheme types and categories.
   /mf/api/v5/fund_schemes/{codes}.json:
     get:
       summary: Mutual Fund Plan Details
