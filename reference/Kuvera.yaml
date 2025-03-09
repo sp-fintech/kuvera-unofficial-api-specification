@@ -484,27 +484,29 @@ paths:
                       minLength: 1
                     sips:
                       type: array
-                      uniqueItems: true
-                      minItems: 1
                       items:
-                        required:
-                          - sip_frequency
-                          - sip_minimum_gap
-                          - sip_maximum_gap
-                        properties:
-                          sip_frequency:
-                            type: string
-                            minLength: 1
-                          sip_dates:
-                            type: array
-                            items:
-                              properties: {}
-                          sip_minimum_gap:
-                            type: string
-                            minLength: 1
-                          sip_maximum_gap:
-                            type: string
-                            minLength: 1
+                        properties: {}
+                    #   uniqueItems: true
+                    #   minItems: 1
+                    #   items:
+                    #     required:
+                    #       - sip_frequency
+                    #       - sip_minimum_gap
+                    #       - sip_maximum_gap
+                    #     properties:
+                    #       sip_frequency:
+                    #         type: string
+                    #         minLength: 1
+                    #       sip_dates:
+                    #         type: array
+                    #         items:
+                    #           properties: {}
+                    #       sip_minimum_gap:
+                    #         type: string
+                    #         minLength: 1
+                    #       sip_maximum_gap:
+                    #         type: string
+                    #         minLength: 1
                     instant:
                       type: string
                       minLength: 1
